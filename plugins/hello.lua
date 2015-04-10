@@ -1,16 +1,19 @@
 do
 
 function run(msg, matches)
-  return "Hello, " .. matches[1]
+  return "Ciao, " .. matches[1]
 end
 
 return {
-  description = "Says hello to someone", 
+  description = "Saluta qualcuno", 
   usage = "say hello to [name]",
   patterns = {
-    "^say hello to (.*)$",
-    "^Say hello to (.*)$"
-  }, 
+    "^Saluta (.*)$",
+    "^saluta (.*)$",
+    "^Di ciao a (.*)$",
+    "^di ciao a (.*)$", 
+    "^Dì ciao a (.*)$",
+    "^dì ciao a (.*)$"  }, 
   run = run 
 }
 
